@@ -1,0 +1,12 @@
+这个文件里的例子意思是：
+	运行unittest222是用的HTMLTestRunner这个框架去实现自动跑脚本并输出.html格式的报告。
+	start_baidu.py和start_sogou.py 就是两个网站的测试脚本，需要调用unittest框架。
+unittest中：	
+   def setUp(self):是框架的开始，比如放入打开的网站，   
+	
+    def test_baidu_search(self):是一个测试用例， 比如登陆
+
+    def test_baidu_set(self):也是一个测试用例，比如设置
+
+    def tearDown(self):是整个介绍的清理过程，关闭浏览器。
+        self.driver.quit()
